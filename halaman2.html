@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman 2 - Galeri & List</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0b0512;
+            --card-bg: rgba(22, 11, 36, 0.7);
+            --accent-red: #ff2a5f;
+            --accent-purple: #9d4edd;
+            --accent-glow: rgba(255, 42, 95, 0.35);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-card: rgba(157, 78, 221, 0.25);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(circle at top left, #200933, #0b0512 60%);
+            color: var(--text-main);
+            min-height: 100vh;
+            padding: 2rem 1rem;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        /* Navigasi */
+        nav {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border-card);
+            padding: 1rem 1.5rem;
+            border-radius: 16px;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+        }
+
+        nav a.btn-back {
+            background: linear-gradient(135deg, var(--accent-red), var(--accent-purple));
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            padding: 0.6rem 1.2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 15px var(--accent-glow);
+            transition: all 0.3s ease;
+        }
+
+        nav a.btn-back:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 25px rgba(255, 42, 95, 0.6);
+        }
+
+        section {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border-card);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #ff4d7d, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1.5rem;
+        }
+
+        /* List Modern */
+        .list-box {
+            background: rgba(11, 5, 18, 0.5);
+            border: 1px solid var(--border-card);
+            padding: 1.5rem 2rem;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+        }
+
+        ul, ol { margin-left: 1.2rem; }
+        li { margin-bottom: 0.4rem; color: var(--text-main); }
+        
+        dt { font-weight: 700; color: var(--accent-red); margin-top: 0.8rem; }
+        dd { color: var(--text-muted); margin-left: 1.2rem; }
+
+        /* Galeri Grid Modern */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.2rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border-card);
+            background: #000;
+            aspect-ratio: 1 / 1;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease, filter 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+            filter: brightness(1.1);
+        }
+
+        /* YouTube Short Embed Modern */
+        .video-box {
+            display: flex;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+
+        .video-box iframe {
+            width: 100%;
+            max-width: 315px;
+            height: 560px;
+            border-radius: 16px;
+            border: 2px solid var(--accent-red);
+            box-shadow: 0 0 20px var(--accent-glow);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <nav>
+        <a href="index.html" class="btn-back">🏠 ➔ Kembali ke Utama (index.html)</a>
+    </nav>
+
+    <!-- Bagian List -->
+    <section>
+        <h2 class="gradient-text">Latihan List (LISTENING)</h2>
+        
+        <div class="list-box">
+            <h3>Unordered List (Bullet)</h3>
+            <ul>
+                <li>Item Pertama</li>
+                <li>Item Kedua</li>
+                <li>Item Ketiga</li>
+            </ul>
+        </div>
+
+        <div class="list-box">
+            <h3>Ordered List (Angka)</h3>
+            <ol>
+                <li>Item Pertama</li>
+                <li>Item Kedua</li>
+                <li>Item Ketiga</li>
+            </ol>
+        </div>
+
+        <div class="list-box">
+            <h3>Description List</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+            </dl>
+        </div>
+    </section>
+
+    <!-- Bagian Galeri Gambar & Video Loop -->
+    <section>
+        <h2 class="gradient-text">Galeri Gambar & YouTube Shorts Loop</h2>
+        
+        <div class="gallery-grid">
+            <!-- Gambar Folder Lokal IMG/ -->
+            <div class="gallery-item"><img src="IMG/Haimiya Mio.jpg" alt="Haimiya Mio"></div>
+            <div class="gallery-item"><img src="IMG/Ichinose.jpg" alt="Ichinose"></div>
+            <div class="gallery-item"><img src="IMG/Suzune.jpg" alt="Suzune"></div>
+            <div class="gallery-item"><img src="IMG/Kei.jpg" alt="Kei"></div>
+
+            <!-- Gambar URL Online / Pinterest -->
+            <div class="gallery-item"><img src="https://i.pinimg.com/originals/6a/38/26/6a3826445f169ce496fcb21603da17e5.gif" alt="HEHEHE"></div>
+            <div class="gallery-item"><img src="https://i.pinimg.com/236x/53/2c/81/532c81af1a3b838e1bbf42e64bae5a9d.jpg" alt="Bini Gua"></div>
+            <div class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7yVipfENOQkvJ0OMq2VwnLRc-84CexuNhpshRass3gpFnOMA20hQdFcQ&s=10" alt="HEHE"></div>
+            <div class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfKVghCdLx82M4-FE8E50vARfCrviTvo1kHZG_gp3mZsjkDm1mfWvmUns&s=10" alt="HEHEHEHE"></div>
+            <div class="gallery-item"><img src="https://i.pinimg.com/originals/ce/80/79/ce8079df3dfad4192202d6fa3b05905f.gif" alt="GIF Anime"></div>
+            <div class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsqBBNmvaDZtc3Zsld08dBejUsfE3eO4TXMzL_4x1b7w&s=10" alt="Thumb"></div>
+        </div>
+
+        <!-- Video Shorts Loop Embed -->
+        <h3 style="margin-top: 2rem;">Pemutar Shorts (Loop Auto)</h3>
+        <div class="video-box">
+            <iframe 
+                src="https://www.youtube.com/embed/Y5wz3KxcDo0?loop=1&playlist=Y5wz3KxcDo0" 
+                title="YouTube Short Loop" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
