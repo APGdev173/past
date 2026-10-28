@@ -128,6 +128,19 @@
             filter: brightness(1.1);
         }
 
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(11, 5, 18, 0.85);
+            color: #fff;
+            padding: 6px;
+            text-align: center;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
         /* YouTube Short Embed Modern */
         .video-box {
             display: flex;
@@ -190,19 +203,38 @@
         <h2 class="gradient-text">Galeri Gambar & YouTube Shorts Loop</h2>
         
         <div class="gallery-grid">
-            <!-- Gambar Folder Lokal IMG/ -->
-            <div class="gallery-item"><img src="IMG/Haimiya Mio.jpg" alt="Haimiya Mio"></div>
-            <div class="gallery-item"><img src="IMG/Ichinose.jpg" alt="Ichinose"></div>
-            <div class="gallery-item"><img src="IMG/Suzune.jpg" alt="Suzune"></div>
-            <div class="gallery-item"><img src="IMG/Kei.jpg" alt="Kei"></div>
+            <!-- Gambar Langsung Tanpa Subfolder IMG/ -->
+            <div class="gallery-item">
+                <img src="BINI GW.jpg" alt="Bini Gw">
+                <div class="gallery-caption">Rikka Takanashi</div>
+            </div>
+            <div class="gallery-item">
+                <img src="Haimiya Mio.jpg" alt="Haimiya Mio">
+                <div class="gallery-caption">Haimiya Mio</div>
+            </div>
+            <div class="gallery-item">
+                <img src="Ichinose.jpg" alt="Ichinose">
+                <div class="gallery-caption">Ichinose Honami</div>
+            </div>
+            <div class="gallery-item">
+                <img src="Suzune.jpg" alt="Suzune">
+                <div class="gallery-caption">Horikita Suzune</div>
+            </div>
+            <div class="gallery-item">
+                <img src="Kei.jpg" alt="Kei">
+                <div class="gallery-caption">Karuizawa Kei</div>
+            </div>
 
-            <!-- Gambar URL Online / Pinterest -->
-            <div class="gallery-item"><img src="https://i.pinimg.com/originals/6a/38/26/6a3826445f169ce496fcb21603da17e5.gif" alt="HEHEHE"></div>
-            <div class="gallery-item"><img src="https://i.pinimg.com/236x/53/2c/81/532c81af1a3b838e1bbf42e64bae5a9d.jpg" alt="Bini Gua"></div>
-            <div class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7yVipfENOQkvJ0OMq2VwnLRc-84CexuNhpshRass3gpFnOMA20hQdFcQ&s=10" alt="HEHE"></div>
-            <div class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfKVghCdLx82M4-FE8E50vARfCrviTvo1kHZG_gp3mZsjkDm1mfWvmUns&s=10" alt="HEHEHEHE"></div>
-            <div class="gallery-item"><img src="https://i.pinimg.com/originals/ce/80/79/ce8079df3dfad4192202d6fa3b05905f.gif" alt="GIF Anime"></div>
-            <div class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsqBBNmvaDZtc3Zsld08dBejUsfE3eO4TXMzL_4x1b7w&s=10" alt="Thumb"></div>
+            <!-- Gambar Tambahan URL Online -->
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/originals/6a/38/26/6a3826445f169ce496fcb21603da17e5.gif" alt="GIF Rikka">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/236x/53/2c/81/532c81af1a3b838e1bbf42e64bae5a9d.jpg" alt="Anime Art">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/originals/ce/80/79/ce8079df3dfad4192202d6fa3b05905f.gif" alt="GIF Anime">
+            </div>
         </div>
 
         <!-- Video Shorts Loop Embed -->
