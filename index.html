@@ -11,7 +11,7 @@
     <style>
         :root {
             --bg-color: #0b0512;
-            --card-bg: rgba(22, 11, 36, 0.7);
+            --card-bg: rgba(22, 11, 36, 0.75);
             --accent-red: #ff2a5f;
             --accent-purple: #9d4edd;
             --accent-glow: rgba(255, 42, 95, 0.35);
@@ -157,7 +157,6 @@
             box-shadow: 0 6px 20px rgba(255, 42, 95, 0.5);
         }
 
-        /* Custom Checkbox/Radio */
         .options-group {
             display: flex;
             gap: 1.5rem;
@@ -233,13 +232,13 @@
         <a href="halaman2.html" class="btn-next">🚀 Halaman 2 (Galeri & List) ➔</a>
     </nav>
 
-    <!-- Bagian Profil -->
+    <!-- Bagian Profil (dari Belajar.html) -->
     <section id="profil">
         <h1 class="gradient-text">ANDHIKA PRATAMA GIBERO GT.S</h1>
         <div class="badge">REKAYASA PERANGKAT LUNAK - SMK PUTRA ANDA</div>
     </section>
 
-    <!-- Bagian Format Teks & Heading -->
+    <!-- Bagian Format Teks & Heading (dari Belajartext.html & HalamanSaya.html) -->
     <section id="teks">
         <h2 class="gradient-text">Latihan Format Teks & Heading</h2>
         <h1>Heading 1</h1>
@@ -257,10 +256,10 @@
         <p>Ini adalah contoh teks <strong>tebal</strong> (bold) dan ini adalah contoh teks <em>miring</em> (italic).</p>
         <p>Berikut adalah contoh <br><br>baris baru</p>
         
-        <p id="paragraf1" class="teks-besar" style="color: #ff4d7d;" title="Ini adalah paragraf">Contoh Paragraf (Merah)</p>
+        <p id="paragraf1" class="teks-besar" style="color: red;" title="Ini adalah paragraf">Contoh Paragraf (Merah)</p>
         <p class="biru">Damn Girl</p>
 
-        <p>Link Youtube Eksternal: <a href="https://www.youtube.com/watch?v=_xyeh4JFDdk&list=RD_xyeh4JFDdk&start_radio=1" target="_blank">Kunjungi YouTube 🥱</a></p>
+        <p>Link Youtube Eksternal: <a href="https://www.youtube.com/watch?v=_xyeh4JFDdk&list=RD_xyeh4JFDdk&start_radio=1" target="_blank">Kunjungi Website 🥱</a></p>
         <p>Link Navigasi: <a href="halaman2.html">Ke Halaman 2</a></p>
         
         <hr>
@@ -269,30 +268,30 @@
         <p>Terima kasih sudah belajar HTML bersama saya hari ini! Terus semangat!</p>
     </section>
 
-    <!-- Bagian Formulir -->
+    <!-- Bagian Formulir (dari Belajarform&css.html) -->
     <section id="form">
         <h2 class="gradient-text">Latihan Form Interaktif</h2>
         <form action="submit.php" method="post">
             <div class="form-group">
-                <label for="nama">Nama Lengkap</label>
+                <label for="nama">Nama:</label>
                 <input type="text" id="nama" name="nama" placeholder="Masukkan nama kamu...">
             </div>
             <div class="form-group">
-                <label for="email">Alamat Email</label>
+                <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="nama@email.com">
             </div>
             <div class="form-group">
-                <label for="pesan">Pesan / Catatan</label>
+                <label for="pesan">Pesan:</label>
                 <textarea id="pesan" name="pesan" rows="4" placeholder="Tuliskan pesan kamu di sini..."></textarea>
             </div>
-            <button type="submit">Kirim Pesan</button>
+            <button type="submit">Kirim</button>
         </form>
 
         <hr>
 
         <form>
             <div class="form-group">
-                <label>Jenis Kelamin (Gender)</label>
+                <label>Gender:</label>
                 <div class="options-group">
                     <label><input type="radio" id="male" name="gender" value="male"> Male</label>
                     <label><input type="radio" id="female" name="gender" value="female"> Female</label>
@@ -300,7 +299,7 @@
             </div>
 
             <div class="form-group">
-                <label>Hobi (Hobbies)</label>
+                <label>Hobbies:</label>
                 <div class="options-group">
                     <label><input type="checkbox" id="sports" name="hobbies" value="sports"> Sports</label>
                     <label><input type="checkbox" id="music" name="hobbies" value="music"> Music</label>
@@ -308,7 +307,7 @@
             </div>
 
             <div class="form-group">
-                <label for="country">Negara (Country)</label>
+                <label for="country">Country:</label>
                 <select id="country" name="country">
                     <option value="indonesia">Indonesia</option>
                     <option value="usa">USA</option>
@@ -317,12 +316,12 @@
         </form>
     </section>
 
-    <!-- Bagian Tabel -->
+    <!-- Bagian Tabel (dari Belajartable.html) -->
     <section id="tabel">
         <h2 class="gradient-text">Latihan Tabel Data</h2>
 
         <div class="table-responsive">
-            <table>
+            <table border="1">
                 <tr>
                     <th>Nama</th>
                     <th>Usia</th>
@@ -339,7 +338,7 @@
         </div>
 
         <div class="table-responsive">
-            <table>
+            <table border="1">
                 <tr>
                     <th colspan="2">Header Tabel</th>
                 </tr>
@@ -358,7 +357,7 @@
         </div>
 
         <div class="table-responsive">
-            <table>
+            <table border="1">
                 <tr>
                     <th>Nama</th>
                     <th>1</th>
